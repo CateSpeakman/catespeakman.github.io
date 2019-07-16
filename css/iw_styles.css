@@ -1,0 +1,106 @@
+/* body, h1, h2.banner, nav ul li a:link are for universal template for all pages */
+body{
+    background-color:black;
+}
+
+
+.banner{
+    color:red;
+    text-align: center;
+}
+
+/*#banner is for About page only*/
+
+#banner{
+    color:red;
+}
+
+.login{
+    color:red;
+
+}
+nav, div.container{
+    color:red;
+}
+
+p.about{
+    color:red; 
+    text-align:left;
+ }
+
+ .navbar{
+    background-color:black;
+ }
+
+ nav ul li{
+     color:red;
+ }
+
+ .home_pic{
+    width:70%;
+    height:70%;
+ }
+
+
+/* imgs on about page*/
+ #login_pic{
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     width:50;
+     height:50;
+    
+ }
+
+ #about{
+    width:30%;
+    height:30%;
+    float:right;
+    margin-left:30px;
+ }
+
+
+#about2{
+    width:30%;
+    height:30%;
+   }
+
+   #about3{
+    width:35%;
+    height:35%;
+    float:right;
+   }
+
+#registerbtn{
+    padding:20px;
+}
+
+ /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    h2 .banner{
+        display:none;
+    }   
+    .navbar{
+        text-align:center;
+    }
+} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px){
+    h2 .banner{
+        display:none;
+    }   
+    .navbar{
+        float:none;
+        text-align:center;
+    }
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .navbar{
+        float:none;
+        text-align:center;
+    }   
+} 
+

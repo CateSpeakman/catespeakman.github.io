@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/iw_styles.css">
+     <title>IndyWrestling 411</title>
+  </head>
+
+  <!-- This page will allow the user to search for wrestling shows by company name or city/state/zip/date range-->
+  <body>
+    <!--Page Header-->
+    <header>
+      <h1 class="banner">IndyWrestling 411</h1>
+      <h2 class="banner">Sharing the Passion of Independent Professional Wrestling</h2>
+
+      <!--Vertical Nav Bar-->
+    <nav>
+      <ul class="nav flex-column float-left navbar">
+          <li class="nav-item navbar">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="register.html">Sign Up</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="search.html">Search Shows</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Wrestling Promotions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Merchandise</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- main body of page/-->
+    <main>
+      
+     <h4 class="login"> Looking for a show?  Let us help. You can search by promotion or input a city/state/zip and date.</h3>
+      <br />
+      <h5 class="login">Choose by Promotion...</h5>
+      <br />
+<!-- this section will allow the user to select by company-->
+  <section>
+    <form>
+    <div class="form-row align-items-center">
+      <div class="col-auto my-1" >
+        <label class="mr-sm-2 sr-only" for="promotion">Promotion</label>
+        <select class="custom-select mr-sm-2" id="promotion">
+          <option selected>Choose a wrestling promotion</option>
+          <option value="Beyond Wrestling">Beyond Wrestling</option>
+          <option value="H2O">Hardcore Hustle H2O</option>
+          <option value="Chikara Pro">Chikara Pro</option>
+        </select>
+      </div>
+     </div>
+      <div class="col-auto my-1">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+    </form>
+  </section>
+
+<!-- this section will allow user to select by city/state/zip/date range-->
+
+    <section>
+      <br />
+      <h5 class="login">Or choose by City/State/Zip and dates...</h5>
+      <br />
+      <div class="container">
+          <form action="/action_page.php">
+              <label for="city"><b>City</b></label>
+              <input type="city" placeholder="Enter city" name="city" required>
+          <!--add dropdown for states-->
+              <div class="form-row align-items-center">
+                    <label for="state"><b>State</b></label>
+                    <select class="custom-select" id="state">
+                      <option selected>Enter state</option>
+                      <option value="CT">CT</option>
+                      <option value="MA">MA</option>
+                      <option value="VT">VT</option>
+                    </select>
+                  </div>
+                 </div>
+          
+              <label for="zipcode"><b>Zipcode</b></label>
+              <input type="zipcode" placeholder="Enter zipcode" name="zipcode" required>
+          
+              <form action="/action_page.php">
+                Start date:
+                <input type="date" name="start_date">
+                End date:
+                <input type="date" name="end_date">
+              </form>           
+              
+               <br />           
+              <button type="submit" id="registerbtn">Submit</button>
+            </div>
+
+    </section>
+    </main>
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
