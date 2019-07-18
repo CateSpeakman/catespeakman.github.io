@@ -3,7 +3,6 @@ body{
     background-color:black;
 }
 
-
 .banner{
     color:red;
     text-align: center;
@@ -14,12 +13,19 @@ body{
 #banner{
     color:red;
 }
-
+/* this is for main heading on login, register, and results pages*/
 .login{
     color:red;
-
 }
-nav, div.container{
+
+.custom_form{
+    color:red;
+    width: 200px;
+}
+
+/*changes font color in form on login, register and search pages*/
+
+div.container {
     color:red;
 }
 
@@ -32,10 +38,23 @@ p.about{
     background-color:black;
  }
 
- nav ul li{
+/* this is for the search page*/
+div#dates, div#location, div#miles{
+    color:red;
+}
+
+
+
+ /*this is for the results page*/
+ .results{
+     color:red;
+     text-align:left;
+ }
+ .table{
      color:red;
  }
-
+ 
+ /*image on home page*/
  .home_pic{
     width:70%;
     height:70%;
@@ -43,14 +62,6 @@ p.about{
 
 
 /* imgs on about page*/
- #login_pic{
-     display: block;
-     margin-left: auto;
-     margin-right: auto;
-     width:50;
-     height:50;
-    
- }
 
  #about{
     width:30%;
@@ -65,7 +76,7 @@ p.about{
     height:30%;
    }
 
-   #about3{
+#about3{
     width:35%;
     height:35%;
     float:right;
@@ -73,34 +84,84 @@ p.about{
 
 #registerbtn{
     padding:20px;
-}
+    }
+/* table styling*/
+.results{
+    color:red;
+  }
+
 
  /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    h2 .banner{
+   
+    h1.banner{
+        font-size:20px;
+    }
+
+    h2.banner{
         display:none;
     }   
-    .navbar{
-        text-align:center;
+    
+    h2#banner{
+        font-size:20px;
     }
-} 
+    .navigation{
+        font-size:10px;    
+    }
+
+    .home_pic{
+        width:50%;
+        height:50%;
+     }
+
+    .login{
+        font-size:15px;
+    }
+
+    .results{
+        font-size:10px;
+    }
+
+    .table{
+        font-size:10px;
+    }
+}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px){
-    h2 .banner{
-        display:none;
+    
+    h1.banner{
+        font-size:30px;
+    }
+    
+    h2.banner{
+        font-size:20px;
     }   
-    .navbar{
-        float:none;
-        text-align:center;
+
+    h2#banner{
+        font-size:20px;
+    }
+
+    .navigation{
+        font-size:10px;
     }
 } 
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    .navbar{
-        float:none;
-        text-align:center;
+    h1.banner{
+        font-size:30px;
+    }
+    h2.banner{
+        font-size:30px;
     }   
+    
+    h2#banner{
+        font-size:20px;
+    }
+    .navigation{
+        font-size:20px;
+    }
+
 } 
 

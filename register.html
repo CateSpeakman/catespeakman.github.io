@@ -14,12 +14,13 @@
   <body>
     <!--Page Header-->
     <header>
+    <!-- header and nav bar are universal across all pages-->
       <h1 class="banner">IndyWrestling 411</h1>
       <h2 class="banner">Sharing the Passion of Independent Professional Wrestling</h2>
 
-      <!--Vertical Nav Bar-->
-    <nav class="container">
-      <ul class="nav flex-column float-left navbar">
+   <!--Vertical Nav Bar-->
+    <nav class="container navigation">
+         <ul class="nav flex-column float-left navbar">
           <li class="nav-item navbar">
             <a class="nav-link" href="index.html">Home</a>
           </li>
@@ -47,40 +48,45 @@
     <!-- main body of page/ This page is for new user registration-->
     <main>
       <section>
-        <h3 class="login">Sign Up</h3>
+        <h4 class="login">Register</h4>
     <!-- this is the registration form section-->
         <div class="container">
-          <div> class="mx-auto" style="width: 200px;">
-            <form action="/action_page.php">
-              <div class="container">
-                <p class="login">Please fill in this form to create an account.</p>
+          <div class="mx-auto custom_form">
+            <form action="login.html" method="GET">
+        <!-- should be  <form action="action_page.php" methood="POST">-->
+                <h6 class="login">Please fill in this form to create an account.</h6>
                 <hr>
             
                 <label for="username"><b>Username</b></label>
-                <input type="text" placeholder="Enter username" name="username">
+                <input type="text" id="username" placeholder="Enter username" name="username">
             
                 <label for="psw"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" required>
+                <input type="password" id="psw" placeholder="Enter Password" name="psw" required>
             
                 <label for="psw-confirm"><b>Confirm Password</b></label>
-                <input type="password" placeholder="Confirm Password" name="psw-confirm" required>
+                <input type="password"  id="psw-confirm" placeholder="Confirm Password" name="psw-confirm" required>
                 <hr>
                             
                 <label for="email"><b>Email</b></label>
-                <input type="text" placeholder="Enter Email" name="email" required>
-                            
-                <button type="submit" class="registerbtn">Register</button>
-              </div>
-
-              <br />
-        </section>
-     <!-- This is the hear about us section of registration form-->
-     <section> 
-            <div id="hearabout">
-                <p>How did you hear about us?</p>
+                <input type="text" id="email" placeholder="Enter Email" name="email" required>
+                
                 <br />
+                <a class="btn btn-primary" href="login.html" role="button">Register</a>
+            
+              </form>
               </div>
-              <div class="form-check">
+            </div>
+        </section>
+
+     <!-- This is the hear about us section of registration form-->
+     
+            <div class="container">
+              <div class="mx-auto custom_form">
+                <br />
+                <p>How did you hear about us?</p>
+              </div>
+              <div class="mx-auto custom_form">
+                <div class="form-check">
                   <input class="form-check-input" type="radio" name="hearabout" id="wrestler_promotions" value="option1" checked>
                   <label class="form-check-label" for="wrestler_promotions">
                   Wrestler/Promotion
@@ -106,18 +112,16 @@
                     </div>
                     <input type="text" class="form-control" aria-label="Text input with radio button">
                   </div>
+                </div>
                   <br />
-        </section>
-
+    
         <!-- this section is for the user who already has an account and landed on the registration page-->
-        <section>
             <div class="container signin">
-                <p>Already have an account? <a href="login.html">Log in</a>.</p>
+                <div class="mx-auto custom_form">
+                <p>Already have an account? <a href="login.html">Log in</a></p>
+                </div>
               </div>
-            </form>
-        </div>
-      </section>
-
+          </div>
     </main>
     
 

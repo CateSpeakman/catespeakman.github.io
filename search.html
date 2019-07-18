@@ -15,11 +15,12 @@
   <body>
     <!--Page Header-->
     <header>
+    <!-- header and nav bar are universal across all pages-->
       <h1 class="banner">IndyWrestling 411</h1>
       <h2 class="banner">Sharing the Passion of Independent Professional Wrestling</h2>
 
       <!--Vertical Nav Bar-->
-    <nav>
+    <nav class="navigation">
       <ul class="nav flex-column float-left navbar">
           <li class="nav-item navbar">
             <a class="nav-link" href="index.html">Home</a>
@@ -45,18 +46,19 @@
         </ul>
       </nav>
     </header>
-    <!-- main body of page/-->
+    <!-- main body of page/this page will be for searching for a wrestling show by promotion or location-->
     <main>
       
-     <h4 class="login"> Looking for a show?  Let us help. You can search by promotion or input a city/state/zip and date.</h3>
+     <h4 class="login"> Looking for a show?  Let us help. You can search by promotion or input a city/state/zip and date.</h4>
       <br />
       <h5 class="login">Choose by Promotion...</h5>
       <br />
-<!-- this section will allow the user to select by company-->
-  <section>
-    <form>
-    <div class="form-row align-items-center">
-      <div class="col-auto my-1" >
+  
+      <form action="results.html" method="GET">
+        <div class="container-fluid">
+    <!--this section of the form will allow the user to select by company-->
+      <div class="form-row align-items-center">
+        <div class="col-auto my-1" >
         <label class="mr-sm-2 sr-only" for="promotion">Promotion</label>
         <select class="custom-select mr-sm-2" id="promotion">
           <option selected>Choose a wrestling promotion</option>
@@ -64,52 +66,70 @@
           <option value="H2O">Hardcore Hustle H2O</option>
           <option value="Chikara Pro">Chikara Pro</option>
         </select>
+        </div>
       </div>
-     </div>
       <div class="col-auto my-1">
-        <button type="submit" class="btn btn-primary">Submit</button>
+       <a class="btn btn-primary" href ="results.html" role="button">Submit</a>
       </div>
-    </div>
-    </form>
-  </section>
-
+   
 <!-- this section will allow user to select by city/state/zip/date range-->
-
-    <section>
+ 
       <br />
       <h5 class="login">Or choose by City/State/Zip and dates...</h5>
       <br />
-      <div class="container">
-          <form action="/action_page.php">
-              <label for="city"><b>City</b></label>
-              <input type="city" placeholder="Enter city" name="city" required>
-          <!--add dropdown for states-->
-              <div class="form-row align-items-center">
-                    <label for="state"><b>State</b></label>
-                    <select class="custom-select" id="state">
-                      <option selected>Enter state</option>
-                      <option value="CT">CT</option>
-                      <option value="MA">MA</option>
-                      <option value="VT">VT</option>
-                    </select>
-                  </div>
-                 </div>
-          
-              <label for="zipcode"><b>Zipcode</b></label>
-              <input type="zipcode" placeholder="Enter zipcode" name="zipcode" required>
-          
-              <form action="/action_page.php">
-                Start date:
-                <input type="date" name="start_date">
-                End date:
-                <input type="date" name="end_date">
-              </form>           
+      <div class="container" id="location">
+    
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="city">City</label>
+                <input type="text" id="city" class="form-control" placeholder="Enter city" name="city">
+              </div>
               
-               <br />           
-              <button type="submit" id="registerbtn">Submit</button>
-            </div>
+          <!--add dropdown for states-->
+              <div class="form-group col-md-2">
+                <label for="state">State</label>
+                <select class="custom-select" id="state">
+                 <option selected>Enter state</option>
+                 <option value="CT">CT</option>
+                 <option value="MA">MA</option>
+                 <option value="VT">VT</option>
+               </select>
+              </div>
 
-    </section>
+              <div class="form-group col-md-2">
+                <label for="zipcode"><b>Zipcode</b></label>
+                <input type="number" id="zipcode" placeholder="Enter zipcode" name="zipcode" >
+              </div>
+        <!-- this the section for the radial buttons for miles within city/state/zip-->    
+              <div class="container" id="miles">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="miles_within" id="100miles" value="option1">
+                <label class="form-check-label" for="100miles">Within 100 miles</label>
+              </div>
+
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="miles_within" id="150miles" value="option2">
+                  <label class="form-check-label" for="150miles">Within 150 miles</label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="miles_within" id="200miles" value="option3">
+                    <label class="form-check-label" for="200miles">Within 200 miles</label>
+                  </div>
+                </div>
+            <div class="container" id="dates">
+               Start date:
+                <input type="date" name="start_date">
+               End date:
+                <input type="date" name="end_date">  
+            </div> 
+                   
+            <br />
+            <a class="btn btn-primary" href="results.html" role="button">Submit</a>
+          </div>
+          </div>
+        </div>
+        </form>
     </main>
     
 

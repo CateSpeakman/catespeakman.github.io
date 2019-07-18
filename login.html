@@ -14,11 +14,12 @@
   <body>
     <!--Page Header-->
     <header>
+    <!-- header and nav bar are universal across all pages-->
       <h1 class="banner">IndyWrestling 411</h1>
       <h2 class="banner">Sharing the Passion of Independent Professional Wrestling</h2>
 
       <!--Vertical Nav Bar-->
-    <nav>
+      <nav class="navigation">
       <ul class="nav flex-column float-left navbar ">
           <li class="nav-item navbar">
             <a class="nav-link" href="index.html">Home</a>
@@ -48,8 +49,9 @@
     <main>
       <h3 class="login">Log in</h3>
       <div class=container>
-      <div class="mx-auto" style="width: 200px;">
-          <form>
+      <div class="mx-auto custom_form">
+          <form action="search.html" method="GET">
+    <!--should be form action="search.html method="POST" as POST is unable to use for training so it is written as GET-->
               <div class="form-group">
                 <label for="Username">Username</label>
                 <input type="text" class="form-control" id="Username" aria-describedby="Username" placeholder="Enter username">
@@ -62,14 +64,12 @@
                 <input type="checkbox" class="form-check-input" id="remember">
                 <label class="form-check-label" for="remember">Remember me</label>
               </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
+              <a class="btn btn-primary" href="search.html" role="button">Register</a>
             </form>
             <br />
-          <p>No username, no problem! Click here to <a href="register.html"><span class="register">Register</span></a></p>
+          <p>No username, no problem! Click here to <a href="register.html">Register</a></p>
       </div>
-      </div>
-      <!-- add picture to page to fill in-->
-      
+      </div> 
     </main>
     
 
