@@ -18,6 +18,7 @@
     <!-- header and nav bar are universal across all pages-->
       <h1 class="banner">IndyWrestling 411</h1>
       <h2 class="banner">Sharing the Passion of Independent Professional Wrestling</h2>
+    </header>
 
       <!--Vertical Nav Bar-->
     <nav class="navigation">
@@ -37,21 +38,15 @@
           <li class="nav-item">
             <a class="nav-link active" href="search.html">Search Shows</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Wrestling Promotions</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Merchandise</a>
-          </li>
         </ul>
       </nav>
-    </header>
+    
     <!-- main body of page/this page will be for searching for a wrestling show by promotion or location-->
     <main>
       
-     <h4 class="login"> Looking for a show?  Let us help. You can search by promotion or input a city/state/zip and date.</h4>
+     <h3 class="search"> Looking for a show?  Let us help. You can search by promotion or input a city/state/zip and date.</h3>
       <br />
-      <h5 class="login">Choose by Promotion...</h5>
+      <h3 class="search">Choose by Promotion</h3>
       <br />
   
       <form action="results.html" method="GET">
@@ -71,11 +66,14 @@
       <div class="col-auto my-1">
        <a class="btn btn-primary" href ="results.html" role="button">Submit</a>
       </div>
+    </div>
+      </form>
+      
    
 <!-- this section will allow user to select by city/state/zip/date range-->
  
       <br />
-      <h5 class="login">Or choose by City/State/Zip and dates...</h5>
+      <h3 class="search">Or choose by City/State/Zip and dates</h3>
       <br />
       <div class="container" id="location">
     
@@ -128,8 +126,6 @@
             <a class="btn btn-primary" href="results.html" role="button">Submit</a>
           </div>
           </div>
-        </div>
-        </form>
     </main>
     
 

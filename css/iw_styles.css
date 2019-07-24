@@ -18,6 +18,12 @@ body{
     color:red;
 }
 
+/* this is for the headings on search page*/
+.search{
+    color:red;
+    font-size:20px;
+}
+
 .custom_form{
     color:red;
     width: 200px;
@@ -29,6 +35,10 @@ div.container {
     color:red;
 }
 
+h5.container{
+    color:red;
+    text-align:center;
+}
 p.about{
     color:red; 
     text-align:left;
@@ -49,6 +59,7 @@ div#dates, div#location, div#miles{
  .results{
      color:red;
      text-align:left;
+     font-size:20px;
  }
  .table{
      color:red;

@@ -17,6 +17,7 @@
     <!-- header and nav bar are universal across all pages-->
       <h1 class="banner">IndyWrestling 411</h1>
       <h2 class="banner">Sharing the Passion of Independent Professional Wrestling</h2>
+    </header>
 
    <!--Vertical Nav Bar-->
     <nav class="container navigation">
@@ -36,29 +37,23 @@
           <li class="nav-item">
             <a class="nav-link" href="search.html">Search Shows</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Wrestling Promotions</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Merchandise</a>
-          </li>
         </ul>
       </nav>
-    </header>
+ 
     <!-- main body of page/ This page is for new user registration-->
     <main>
       <section>
-        <h4 class="login">Register</h4>
+        <h3 class="login">Register</h3>
     <!-- this is the registration form section-->
         <div class="container">
           <div class="mx-auto custom_form">
             <form action="login.html" method="GET">
         <!-- should be  <form action="action_page.php" methood="POST">-->
-                <h6 class="login">Please fill in this form to create an account.</h6>
+                <h4 class="login">Please fill in this form to create an account.</h4>
                 <hr>
             
                 <label for="username"><b>Username</b></label>
-                <input type="text" id="username" placeholder="Enter username" name="username">
+                <input type="text" id="username" placeholder="Enter username" name="username" required>
             
                 <label for="psw"><b>Password</b></label>
                 <input type="password" id="psw" placeholder="Enter Password" name="psw" required>
@@ -68,22 +63,16 @@
                 <hr>
                             
                 <label for="email"><b>Email</b></label>
-                <input type="text" id="email" placeholder="Enter Email" name="email" required>
-                
+                <input type="email" id="email" placeholder="Enter Email" name="email" required>
+       
                 <br />
-                <a class="btn btn-primary" href="login.html" role="button">Register</a>
-            
-              </form>
-              </div>
             </div>
-        </section>
+        </div>
 
      <!-- This is the hear about us section of registration form-->
-     
-            <div class="container">
-              <div class="mx-auto custom_form">
+    
                 <br />
-                <p>How did you hear about us?</p>
+                <h5 class="container">How did you hear about us?</h5>
               </div>
               <div class="mx-auto custom_form">
                 <div class="form-check">
@@ -112,16 +101,20 @@
                     </div>
                     <input type="text" class="form-control" aria-label="Text input with radio button">
                   </div>
+                  <br />
+                <div>
+                  <button type= "button" class="btn btn-primary">Register</button>
+                </div>
                 </div>
                   <br />
-    
+              </form>
+            </section>
         <!-- this section is for the user who already has an account and landed on the registration page-->
             <div class="container signin">
                 <div class="mx-auto custom_form">
                 <p>Already have an account? <a href="login.html">Log in</a></p>
                 </div>
-              </div>
-          </div>
+              </div>      
     </main>
     
 
